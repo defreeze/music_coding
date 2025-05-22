@@ -1,0 +1,9 @@
+# Ignore VSCode settings
+.vscode/
+
+# Ignore Mac system files
+.DS_Store
+
+# Ignore backup files
+*~
+*.swp
