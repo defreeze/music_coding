@@ -1,0 +1,20 @@
+{
+  "name": "music_coding",
+  "version": "1.0.0",
+  "workspaces": [
+    "website",
+    "packages/*"
+  ],
+  "description": "A repository for generating music code using TidalCycles.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "strudel": "strudel"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@strudel/web": "^1.2.1"
+  }
+}

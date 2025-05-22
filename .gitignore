@@ -1,9 +1,35 @@
-# Ignore VSCode settings
-.vscode/
+# Dependencies
+node_modules/
+.pnpm-store/
 
-# Ignore Mac system files
+# Build outputs
+dist/
+build/
+.cache/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-*
 .DS_Store
 
-# Ignore backup files
+# Logs and debugging
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# Backup files
 *~
 *.swp
+*.bak
+
+# TidalCycles specific
+.tidal-boot.hs
+.tidal-history

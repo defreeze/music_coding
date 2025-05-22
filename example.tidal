@@ -1,4 +1,0 @@
--- example.tidal
--- Basic TidalCycles pattern example
-
-d1 $ sound "bd sn cp"
