@@ -10,7 +10,7 @@ export default function UdelsHeader(Props) {
           <div className={'mt-[1px] cursor-pointer'}>🌀</div>
 
           <div className={'animate-pulse'}>
-            <span className="">strudel</span> <span className="text-sm">-UDELS</span>
+            <span className="">DJ KARBONKEL</span> <span className="text-sm">-UDELS</span>
           </div>
         </h1>
         <NumberInput value={numWindows} setValue={setNumWindows} />
