@@ -1,4 +1,5 @@
 # samples folder
+# add sample audio files here 
 
 1. copy any samples to this folder
 2. run `npx @strudel/sampler` from this folder
