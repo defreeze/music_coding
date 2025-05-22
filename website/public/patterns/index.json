@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Example 1: Basic Pattern",
+    "path": "/patterns/example1.js"
+  },
+  {
+    "name": "Funky Beat",
+    "path": "/patterns/funky.js"
+  },
+  {
+    "name": "Daft Punk Techno",
+    "path": "/patterns/daftpunk_techno.js"
+  }
+] 

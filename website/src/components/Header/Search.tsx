@@ -16,7 +16,7 @@ const useDocSearchKeyboardEvents =
 
 export default function Search() {
   const [isOpen, setIsOpen] = useState(false);
-  const searchButtonRef = useRef<HTMLButtonElement>(null);
+  const searchButtonRef = useRef<HTMLButtonElement>(null!);
   const [initialQuery, setInitialQuery] = useState('');
 
   const onOpen = useCallback(() => {

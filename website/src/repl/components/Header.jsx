@@ -3,15 +3,21 @@ import StopCircleIcon from '@heroicons/react/20/solid/StopCircleIcon';
 import cx from '@src/cx.mjs';
 import { useSettings, setIsZen } from '../../settings.mjs';
 import '../Repl.css';
+import PatternSelector from '@src/components/PatternSelector';
 
 const { BASE_URL } = import.meta.env;
 const baseNoTrailing = BASE_URL.endsWith('/') ? BASE_URL.slice(0, -1) : BASE_URL;
 
 export function Header({ context, embedded = false }) {
-  const { started, pending, isDirty, activeCode, handleTogglePlay, handleEvaluate, handleShuffle, handleShare } =
+  const { started, pending, isDirty, activeCode, handleTogglePlay, handleEvaluate, handleShuffle, handleShare, setCode } =
     context;
   const isEmbedded = typeof window !== 'undefined' && (embedded || window.location !== window.parent.location);
   const { isZen, isButtonRowHidden, isCSSAnimationDisabled, fontFamily } = useSettings();
+
+  const handlePatternSelect = (content) => {
+    setCode(content);
+    handleEvaluate();
+  };
 
   return (
     <header
@@ -113,6 +119,11 @@ export function Header({ context, embedded = false }) {
             >
               <span>share</span>
             </button>
+          )}
+          {!isEmbedded && (
+            <div className="flex items-center px-2">
+              <PatternSelector onSelect={handlePatternSelect} currentCode={activeCode} />
+            </div>
           )}
           {!isEmbedded && (
             <a

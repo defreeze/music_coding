@@ -25,6 +25,31 @@ After cloning the project, you can run the REPL locally:
    pnpm dev
    ```
 
+## Running the Website Locally
+
+To run the Strudel website (strudel.cc) locally:
+
+1. Make sure you have completed the installation steps above
+2. Navigate to the project root directory
+3. Install all workspace dependencies:
+   ```bash
+   pnpm install
+   ```
+4. Navigate to the website directory:
+   ```bash
+   cd website
+   ```
+5. Build the website:
+   ```bash
+   pnpm run build
+   ```
+6. Navigate to the built files and serve them:
+   ```bash
+   cd dist
+   npx serve
+   ```
+7. Open your browser and go to the URL shown in the terminal (typically http://localhost:3000)
+
 ## Using Strudel In Your Project
 
 This project is organized into many [packages](./packages), which are also available on [npm](https://www.npmjs.com/search?q=%40strudel).
